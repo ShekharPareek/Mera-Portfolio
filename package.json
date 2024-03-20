@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "aos": "^2.3.4",
+    "jquery": "^3.7.1",
+    "scrollreveal": "^4.0.9",
+    "slick-carousel": "^1.8.1",
+    "type-js": "^1.0.0",
+    "typed.js": "^2.1.0"
+  }
+}

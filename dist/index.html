@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shekhar Pareek</title>
+  <link rel="icon" sizes="196x196" type="image/x-icon" href="../asset/SRK-removebg-preview.ico">
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+    integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="./global.js"></script>
+
+</head>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+  .animation_container {
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    padding: 20px 10px 20px 10px;
+  }
+  .tab_content {
+    display: none;
+  }
+
+  .animation_container .animation-inner div {
+    padding: 4px 12px;
+    height: auto;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .web-dev {
+    margin-top: 52px;
+  }
+
+  .animation_container div:first-child {
+    animation: textAnimation 8s infinite;
+  }
+
+  @keyframes textAnimation {
+    0% {
+      margin-top: 0;
+    }
+
+    10% {
+      margin-top: -80px
+    }
+
+    20% {
+      margin-top: -80px;
+    }
+
+    30% {
+      margin-top: -179.84px;
+    }
+
+    40% {
+      margin-top: -179.84px;
+    }
+
+    60% {
+      margin-top: -179.84px;
+    }
+
+    70% {
+      margin-top: -80px;
+    }
+
+    80% {
+      margin-top: -80px;
+    }
+
+    80% {
+      margin-top: -80px;
+    }
+
+    90% {
+      margin-top: 0;
+    }
+
+    100% {
+      margin-top: 0;
+    }
+
+  }
+
+  .position-fixed{
+    position: sticky;
+    top:144px;
+  }
+
+  
+  .active_item{
+    background-image: linear-gradient(to right, #FA5252, #DD2476);
+  }
+</style>
+
+<body style="font-family:Poppins,sans-serif;" class="m-0 p-0 h-full box-border">
+  <div
+    style="background-image:url(../asset/bgtwo.jpg); background-position: 50%;"
+    class="section bg-gradient-to-r from-[#FA5252] to-[#DD2476] w-full h-full box-border relative bg-no-repeat bg-fixed bg-cover">
+     <div class="text-4xl  w-full Typo-text
+     rounded-lg animation_container text-white  text-center flex justify-center items-center gap-3"><span>I am a</span></div>
+      <div style="font-weight: 700;  font-family:Roboto Slab, serif;
+      font-optical-sizing: auto;"  class="text-4xl  w-full Typo-text
+         rounded-lg animation_container text-white mb-10 text-center">
+        <div class="animation-inner">
+          <div>UI/UX Enginner</div>
+          <div>Front-End-Developer</div>
+          <div class="web-dev">Web Developer</div>
+        </div>
+
+      </div>
+    <div  class="bg-slack-600 container sm:flex sm:justify-center sm:gap-5 sm:pb-40 flex-wrap m-auto">
+      <!-- Column-1 -->
+      <div style="box-shadow: inset -9rem 0 4rem -13rem #000; padding-top: 0;" id="column-1" class="col-1 p-6  lg:h-screen lg:sticky top-[145px] sm:static sm:mt-32 mt-[142px]">
+      <div class="relative">
+        <div style="background-color:#0e4379; padding:7px 0 0 0;box-shadow: #254bdd 0px 2px 7px 0px; position: absolute; bottom: 90%; left:15%"
+          class="profile rounded-xl p-1 w-[264px] h-[260px] mx-auto mb-16 translate-y-1/2 overflow-hidden">
+          <img class="w-full h-full object-cover object-top" src="../asset/SRK-removebg-preview.png" alt="" />
+        </div>
+        <div class="info-card bg-[#111111] p-5 w-96 text-center rounded-2xl flex flex-col items-center">
+          <h4 class="text-white text-3xl mt-3 font-semibold pt-24">
+            <span class="block text-[18px] mt-4">👋🏼 Hey! me</span>
+            Shekhar Pareek
+          </h4>
+          <div class="p-2 pt-1 bg-[#1D1D1D] rounded-xl mt-2 w-fit text-center">
+            <!-- <p class="text-slate-600 text-lg font-normal">Ui/Ux Designer</p> -->
+            <div class="text-slate-600 text-lg font-normal">UI/UX Enginner</div>
+          </div>
+          <div class="mt-3 flex items-center justify-around">
+            <div
+              class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white cursor-pointer mx-2 text-[20px] text-white">
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+            <div
+              class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white cursor-pointer mx-2 text-[20px] text-white">
+              <a href="https://github.com/ShekharPareek"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div
+              class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white  cursor-pointer mx-2 text-[20px] text-white">
+              <a href="https://codepen.io/shekharpareek-the-bold"><i class="fa-brands fa-codepen"></i></a>
+            </div>
+            <div
+              class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white  cursor-pointer mx-2 text-[20px] text-white">
+              <a href="mailto:shekharpareek30@gmail.com"><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+          <div class="bg-[#1d1d1d] p-5 w-full rounded-xl mt-3">
+            <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
+                  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M272 0H48C21.5 0 0 21.5 0 48v416c0 26.5 21.5 48 48 48h224c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48zM160 480c-17.7 0-32-14.3-32-32s14.3-32 32-32 32 14.3 32 32-14.3 32-32 32zm112-108c0 6.6-5.4 12-12 12H60c-6.6 0-12-5.4-12-12V60c0-6.6 5.4-12 12-12h200c6.6 0 12 5.4 12 12v312z">
+                  </path>
+                </svg></span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Phone</p>
+                <p class="dark:text-white break-all"><a class="hover:text-[#FA5252] duration-300 transition"
+                    href="tel:9694193457">9694193457</a></p>
+              </div>
+            </div>
+            <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
+                  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0zM192 272c44.183 0 80-35.817 80-80s-35.817-80-80-80-80 35.817-80 80 35.817 80 80 80z">
+                  </path>
+                </svg></span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Location</p>
+                <p class="dark:text-white break-all">
+                <p class="hover:text-[#FA5252] duration-300 transition dark:text-white break-all">Bikaner(RAJ)</p>
+                </p>
+              </div>
+            </div>
+            <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
+                  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M176 216h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16c0 8.84 7.16 16 16 16zm-16 80c0 8.84 7.16 16 16 16h160c8.84 0 16-7.16 16-16v-16c0-8.84-7.16-16-16-16H176c-8.84 0-16 7.16-16 16v16zm96 121.13c-16.42 0-32.84-5.06-46.86-15.19L0 250.86V464c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V250.86L302.86 401.94c-14.02 10.12-30.44 15.19-46.86 15.19zm237.61-254.18c-8.85-6.94-17.24-13.47-29.61-22.81V96c0-26.51-21.49-48-48-48h-77.55c-3.04-2.2-5.87-4.26-9.04-6.56C312.6 29.17 279.2-.35 256 0c-23.2-.35-56.59 29.17-73.41 41.44-3.17 2.3-6 4.36-9.04 6.56H96c-26.51 0-48 21.49-48 48v44.14c-12.37 9.33-20.76 15.87-29.61 22.81A47.995 47.995 0 0 0 0 200.72v10.65l96 69.35V96h320v184.72l96-69.35v-10.65c0-14.74-6.78-28.67-18.39-37.77z">
+                  </path>
+                </svg></span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Email</p>
+                <p class="dark:text-white break-all text-[14px]"><a class="hover:text-[#FA5252] duration-300 transition"
+                    href="mailto:shekharpareek30@gmail.com">shekharpareek30@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
+                  stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
+                  width="1em" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M0 464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V192H0v272zm320-196c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM192 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12h-40c-6.6 0-12-5.4-12-12v-40zM64 268c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zm0 128c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12H76c-6.6 0-12-5.4-12-12v-40zM400 64h-48V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H160V16c0-8.8-7.2-16-16-16h-32c-8.8 0-16 7.2-16 16v48H48C21.5 64 0 85.5 0 112v48h448v-48c0-26.5-21.5-48-48-48z">
+                  </path>
+                </svg></span>
+              <div class="text-left ml-2.5">
+                <p class="text-xs text-[#44566C] dark:text-[#A6A6A6]">Phone</p>
+                <p class="dark:text-white break-all"><a
+                    class="hover:text-[#FA5252] duration-300 transition"></a>05/02/1995</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="p-4 bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-full mt-5 w-fit text-center text-white">
+            <a href="../asset/Shekhar Pareek -FrontendEngineer-1.8Year.pdf">Download Resume</a>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Column-2 with nav -->
+      <div style="box-shadow: inset -9rem 0 4rem -13rem #000;" class="col-2 container sm:mt-16 sm:h-fit sm:basis-[50%]">
+        <nav class="block p-5 bg-[#111111] rounded-xl text-white sm:p-5 sm:text-lg  sm:ml-auto text-sm w-full sm:w-[45%]">
+          <ul class="flex items-center justify-evenly w-full text-center item nav-item gap-3">
+            <li id="home"
+              class="transition-colors rounded-lg bg-[#212425] text-center w-full max-md:p-4:"><a
+                class="flex flex-col items-center gap-3 mt-4 mb-4 text-lg" href="#"><i class="fa-solid fa-house"></i><span
+                  class="text-sm">Home</span></a></li>
+            <li id="resume"
+              class="transition-colors rounded-lg bg-[#212425] text-center w-full">
+              <a class="flex flex-col items-center gap-3 mt-4 mb-4 text-lg" href="#"><i class="fa-solid fa-file"></i><span
+                  class="text-sm">Resume</span></a>
+            </li>
+            <li id="works"
+              class="transition-colors rounded-lg bg-[#212425] text-center w-full">
+              <a class="flex flex-col items-center gap-3 mt-4 mb-4 text-lg" href="#"><i
+                  class="fa-solid fa-briefcase"></i><span class="text-sm">Works</span></a>
+            </li>
+            <li id="contacts"
+              class="transition-colors w-full rounded-lg bg-[#212425] text-center">
+              <a class="flex flex-col items-center gap-3 mt-4 mb-4 text-lg" href="#"><i
+                  class="fa-solid fa-address-book"></i><span class="text-sm">Contact</span></a>
+            </li>
+          </ul>
+        </nav>
+        <div class="content_container p-2 w-full md:w-[800px] md:max-w-5xl">
+        <div  data-tab="home" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
+          <div class="flex items-center  gap-12">
+            <h2 style="font-family:Roboto Slab, serif"  class="text-white sm:text-[32px] text-2xl">About Me</h2>
+            <div class="w-44 h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:w-1/2 sm:h-[1px]"></div>
+          </div>
+          <div style="color: rgb(166 166 166);"class="About-desciption  pt-3 text-[16px]">Experienced Front-End Developer with 2 years of
+            experience. Proficient in building responsive web Collaborative team player
+            known for delivering projects on time and within budget.
+          </div>
+          <div style="color: rgb(166 166 166);" class="About-desciption  pt-3 text-[16px]">Enjoy working closely with team members to ensure
+            workloads are
+            effectively redirected to bottlenecks and personally picking up the slack when necessary . Ready to apply my
+            passion for coding
+            to a talented engineering team to develop quality solutions</div>
+          <div class="text-white  mt-11">
+            <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl">What I do!</h3>
+          </div>
+          <div class="flex flex-col md:flex-row md:gap-7 w-full">
+            <div class="pt-4 md:w-1/2">
+                <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <span class="w-3/12 h-auto"><img class="w-full" src="../asset/icon-1.svg" alt=""></span>
+                    <div class="flex flex-col">
+                        <p class="text-lg pb-2">Ui/Ux Design</p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">User Experience (UX) Design and User Interface (UI) Design are two pillars that play a crucial role in the realm of digital product development</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 md:w-1/2">
+                <div style="border:0.5px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <span class="w-3/12 h-auto"><img class="w-full" src="../asset/icon-3.svg" alt=""></span>
+                    <div class="flex flex-col">
+                        <p class="text-lg pb-2">Photography</p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">I enjoy capturing random snapshots and nature photos. I am drawn to cool and gradient backgrounds, with colors mixed by nature.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class="flex flex-col md:flex-row md:gap-7 w-full">
+            <div class="mt-8 md:w-1/2">
+                <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <span class="w-3/12 h-auto"><img class="w-[80px]" src="../asset/icon-6.svg" alt=""></span>
+                    <div class="flex flex-col">
+                        <p class="text-[18px] pb-2">Web Development</p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">Have an strong interest in web,i say yes JavaScript one of my close friend who has ignite my passion for programming and logics</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 md:w-1/2">
+                <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <span class="w-3/12 h-auto"><img class="w-[80px]" src="../asset/icon-2.svg" alt=""></span>
+                    <div class="flex flex-col">
+                        <p class="text-[18px] pb-2">Listen Music</p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">Music is my hobby also,reduces stress during work,mostly help when i have lot of work with same day deadline.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+          <div class=" bg-[#1b1b1b]  h-7 pt-2 rounded-lg mt-8 text-white text-center text-[10px]">
+            Technology I use in the porfolio 👉🏼 <a class="pt-1" target="_blank"
+              href="https://tailwindcss.com/">Tailwind<img class="w-4 inline" src="../asset/tailwind-css.svg"
+                alt="tailwind-css">CSS</a>
+          </div>
+        </div>
+        <div data-tab="resume" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
+          <div class="flex items-center  gap-12">
+            <h2 style="font-family:Roboto Slab, serif"class="text-white sm:text-[32px] text-2xl">Resume</h2>
+            <div class="w-44 h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:w-1/2 sm:h-[1px]"></div>
+          </div>
+          <div  style="color: rgb(166 166 166);" class="About-desciption  pt-3 text-white text-[16px]">Experienced Front-End Developer with 2 years of
+            experience. Proficient in building responsive web Collaborative team player
+            known for delivering projects on time and within budget.
+          </div>
+          <div  style="color: rgb(166 166 166);" class="About-desciption  pt-3 text-white text-[16px]">Enjoy working closely with team members to ensure
+            workloads are
+            effectively redirected to bottlenecks and personally picking up the slack when necessary . Ready to apply my
+            passion for coding
+            to a talented engineering team to develop quality solutions</div>
+          <div class="text-white  mt-11">
+            <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl ">Work Experience</h3>
+          </div>
+          <div  class="flex gap-7 w-full ">
+            <div class="pt-4">
+              <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex flex-col items-start gap-5 md:flex-row md:items-center w-full md:w-auto">
+                <span class="sm:w-[100px] h-auto"><img class="w-[100%]" src="../asset/sunarc.png" alt=""></span>
+                <div class=" flex flex-col">
+                  <h5 style="justify-content: space-between;" class="text-[18px] pb-2 flex"><span>SunArc
+                      Technologies</span><span>May 2022</span></h5>
+                  <p class="text-[16px] pb-2 text-[#44566C] dark:text-[#A6A6A6]">Ui/Ux Enginner</p>
+                  <p  style="color: rgb(166 166 166);" class="text-sm mb-2">- Successfuly mapped design parameter to incorporate new features and
+                    performance enhancement,resulting in improving System performance and UX.</p><br>
+                  <p  style="color: rgb(166 166 166);" class="text-sm">- Working on Latest ecommerce technology<b style="color:#95bf47;"
+                      class="text-green-700 pl-[2px]"> <a href="https://www.shopify.com/">Shopify</a></b>with shopify
+                    basic and plus with its POS (Point of Sale) systems.</p><br>
+                  <p  style="color: rgb(166 166 166);" class="text-sm mb-2">- Proficient in technologies such as
+                    HTML,CSS,Javascript,jQuery,Bootstrap,Tailwind ReactJS(Basics),GSAP(JS).</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-white  mt-11">
+            <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl ">Projects & Clients</h3>
+          </div>
+          <div  class="flex flex-col md:flex-row md:gap-7 w-full">
+            <div class="pt-4 md:w-1/2">
+                <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <div class="block">
+                        <p class="text-lg pb-2 w-3/12"><img class="w-full" src="../asset/_E132C6DB-EE56-41FB-AF7C-C6D0FAD341DB_.png-removebg-preview.png" alt=""></p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">UNIQSO is a reputable, trusted & esteemed supplier of colored contacts & cosplay costumes. Available in more than 7 countries with shipping and dropshipping</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 md:w-1/2">
+                <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <div class="block">
+                        <p class="text-lg pb-2">AmarChitra Khata</p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">Amar Chitra Katha is an Indian comic book publisher, based in Mumbai, India. The company was founded in 1967 by Anant Pai and is headquartered in Mumbai, India.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div  class="flex  flex-col md:flex-row md:gap-7 w-full">
+            <div class="pt-4 md:w-1/2">
+                <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                    <div class="block">
+                        <p class="text-lg pb-2"><img class="w-1/4" src="../asset/twelvesixtynine-beige-logo_135x.png" alt=""></p>
+                        <p style="color: rgb(166 166 166);" class="text-sm">Twelvesixtynine says they aren't here to sell you sunglasses; we're here to make you fall in love with eyewear with a passion as strong as ours.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="pt-4 md:w-1/2">
+              <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
+                  <div class="block">
+                      <p class="text-lg pb-2"><img class="w-1/4" src="../asset/twelvesixtynine-beige-logo_135x.png" alt=""></p>
+                      <p style="color: rgb(166 166 166);" class="text-sm">Twelvesixtynine says they aren't here to sell you sunglasses; we're here to make you fall in love with eyewear with a passion as strong as ours.</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+        
+          <div class="text-white  mt-11">
+            <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl">Education</h3>
+          </div>
+          <div style="border:0.20px solid #3d3a3a; color:rgb(166 166 166);" class="rounded-lg p-4 text-sm mt-3">
+            <div style="justify-content: space-between;" class="flex gap-7 w-full rounded-lg p-4">
+              <div class="">BTEC (Mechanical)</div>
+              <div>Rajasthan Technical University Kota</div>
+              <div>2020</div>
+            </div>
+            <div style="justify-content: space-between;" class="flex gap-7 w-full rounded-lg p-4">
+              <div class="">Diploma (Mechanical)</div>
+              <div class="align-middle">Bachelor In Technical Education,Jodhpur</div>
+              <div>2015</div>
+            </div>
+            <div style="justify-content: space-between;" class="flex gap-7 w-full rounded-lg p-4">
+              <div class="">10th Class</div>
+              <div>R.S.V School Bikaner</div>
+              <div>2011</div>
+            </div>
+          </div>
+          <div class=" bg-[#1b1b1b]  h-7 pt-2 rounded-lg mt-8 text-white text-center text-[10px]">
+            Technology I use in the porfolio 👉🏼 <a class="pt-1 text-blue-700" target="_blank"
+              href="https://tailwindcss.com/">Tailwind<img class="w-4 inline" src="../asset/tailwind-css.svg"
+                alt="tailwind-css">CSS</a>
+          </div>
+        </div>
+        <div data-tab="works" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
+          <div class="flex items-center sm:items-center gap-12">
+            <h2 style="font-family:Roboto Slab, serif" class="text-white sm:text-[32px] text-2xl">Why Choose Me?</h2>
+            <div class="w-44 h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:w-1/2 sm:h-[1px]"></div>
+          </div>
+          <div class="About-desciption  pt-3 text-white text-sm">
+            <ul style="list-style:disc; padding:10px 20px;color: rgb(166 166 166); "class="items-list list-disc pl-3 sm:text-[16px]">
+              <li><b class="text-blue-500">Expertise</b> : With 2 years of experience in frontend development, I have honed my skills in HTML, CSS, and JavaScript to perfection. Whether you need a stunning landing page, an intuitive e-commerce platform, or a dynamic web application, I have the expertise to deliver results that exceed your expectations.</li>
+              <li><b class="text-orange-400">Creativity</b>: I thrive on creativity and innovation, constantly pushing the boundaries of what is possible in web design. From eye-catching animations to seamless transitions, I infuse each project with a touch of flair that sets it apart from the rest.</li>
+              <li><b class="text-green-400">Collaboration</b>: Communication is key to any successful project, and I pride myself on my ability to collaborate closely with clients to understand their vision and goals. I am responsive, attentive, and always ready to adapt to your needs as the project evolves.</li>
+              <li><b class="text-yellow-300">Reliability</b>: As a developer, I understand the importance of meeting deadlines and delivering results on time and within budget. You can count on me to be reliable, professional, and dedicated to achieving your project objectives</li>
+            </ul>
+          </div>
+          <div class="text-white pt-4">
+            <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl ">E-commerce Projects</h3>
+          </div>
+          <div  style="border:0.20px solid #3d3a3a" class="flex gap-7 w-full rounded-lg mt-4 mb-3">
+              <div  class="rounded-lg p-4 flex items-start gap-5 w-full">
+                <div class=" flex flex-col">
+                  <p style="background: linear-gradient(to right, #dd2476 0%, #330867 100%);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;" class="text-[20px] pb-2 w-auto">UNIQSO</p>
+                  <span class="text-white inline text-[8px!important]">For UK CA EU MY</span>
+                  <ul style="list-style:disc; padding:10px 20px; color: rgb(166 166 166);" class="items-list list-disc pl-">
+                    <li> Shopify Templating language changes and theme Maintenance work.</li>
+                    <li>Shopify app Integration.</li>
+                    <li>Create customizable sections within Shopify themes that allow for the dynamic placement of
+                      content blocks.</li>
+                    <li>Products Creations and Page building and navigations, Shipping, order maintenance.</li>
+                    <li>Store Migration to Shopify 2.0.</li>
+                    <li>Develop custom JavaScript snippets and functionalities to enhance user interactions, such as
+                      dynamic product displays,
+                      interactive elements.</li>
+                    <li>Implement responsive design to ensure that dynamic sections adapt to various screen sizes and
+                      devices.</li>
+                    <li>Installed, configured, and maintained shopify apps essential for the smooth functioning .</li>
+                    <li>Managed promotional offers and discounts as per client requirement and , ensuring their accurate
+                      display and functionality
+                      on the cart and product pages.</li>
+                    <li> Web page maintenance work related to design and functionality</li>
+                    <li> customising theme using shopify CLI.</li>
+                  </ul>
+                </div>
+              </div>
+           
+          </div>
+          <div class="text-white pt-3">
+            <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl">Proficent in Tec Stacks</h3>
+          </div>
+          <div class="w-full mt-3 p-4 rounded-lg">
+              <div  class="text-sm flex justify-around items-center gap-2">
+                <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">HTML</h5>
+                <div style="border: 4px solid #1d1d1d; width:550px;overflow: hidden;  height: 12px;" class="rounded-lg w-full">
+                  <div style="background-color:orange;
+                  width: 90%;" class="bg-yellow-400 w-[90%] h-full"></div>
+                </div>
+                <h5 class="text-white">90%</h5>
+              </div>
+          </div>
+          <div class="w-full mt-3 p-4">
+            <div  class="text-sm flex justify-around items-center gap-2">
+              <h5 class=" w-28 text-center rounded-lg p-1 bg-[#254bdd] text-black font-semibold">CSS</h5>
+              <div style="border: 4px solid #1d1d1d; width:550px;overflow: hidden;  height: 12px;" class="rounded-lg w-full">
+                <div style="width: 90%; background-color:#254bdd;" class="w-[90%] h-full"></div>
+              </div>
+              <h5 class="text-white">90%</h5>
+            </div>
+        </div>
+        <div class="w-full mt-3 p-4">
+          <div  class="text-sm flex justify-around items-center gap-2 ">
+            <h5 class=" w-28 text-center rounded-lg p-1 bg-yellow-400 text-black  font-semibold">JavaScript</h5>
+            <div style="border: 4px solid #1d1d1d; width:550px;overflow: hidden;  height: 12px;" class="rounded-lg w-full">
+              <div style="width: 90%; background-color:yellow;" class="w-[90%] h-full"></div>
+            </div>
+            <h5 class="text-white">75%</h5>
+          </div> 
+      </div>
+      <div class="text-white mt-4">
+        <h3 style="font-family:Roboto Slab, serif" class="sm:text-[32px] text-2xl">Libraries and preprocessors</h3>
+      </div>
+    
+      <div  class="w-full mt-3 p-4">
+        <div  class="text-sm flex justify-around items-center gap-2">
+          <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">JQUERY</h5>
+          <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">SCSS</h5>
+          <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">GSAP</h5>
+          <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">REACT</h5>
+          <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">TAILWIND</h5>
+          <h5 class=" w-28 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold">BOOTSTRAP</h5>
+        </div>
+    </div>
+  
+          <div class=" bg-[#1b1b1b]  h-7 pt-2 rounded-lg mt-8 text-white text-center text-[10px]">
+            Technology I use in the porfolio 👉🏼 <a class="pt-1" target="_blank"
+              href="https://tailwindcss.com/">Tailwind<img class="w-4 inline" src="../asset/tailwind-css.svg"
+                alt="tailwind-css">CSS</a>
+          </div>
+        </div>
+        <div data-tab="contacts" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
+          <div class="flex items-center  gap-12">
+            <h2 style="font-family:Roboto Slab, serif" class="text-white sm:text-[29px] text-2xl">Let's Work Together!</h2>
+            <div class="w-44 h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:w-1/2 sm:h-[1px]"></div>
+          </div>
+          <div style="color: rgb(166 166 166);" class="About-desciption  pt-3 text-white text-sm sm:text-[16px]">If you're ready to take your web presence to the next level, I'm here to help. Contact me today to discuss your project requirements and see how I can bring your vision to life. Let's create something extraordinary together!</div>
+          <div class="flex gap-7 w-full mt-7 mb-5">
+            <h2 style="font-family:Roboto Slab, serif" class="text-[#ef4061] text-[12px] text-center">Feel free to Contact me by submitting the form below and I will get back to you as soon as possible</h2>
+            
+          </div>
+          <div style="margin:0 auto; overflow: hidden; " class="flex bg-[#1d1d1d] shadow-md rounded-lg">
+            <div class="block w-[60%] sm:w-[50%]"><img class="sm:h-[100%] h-full w-full" src="	https://img.freepik.com/free-vector/creation-process-concept-illustration_114360-2091.jpg"></div>
+          <form class=" px-8 pt-6 pb-8 mb-4 text-white"
+            action="https://formspree.io/f/mzbnvawy"
+            method="POST"
+          >
+           <div class="mb-4">
+            <label class="block text-white text-sm font-bold mb-2">
+              Your email
+              <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" type="email" name="email">
+            </label>
+            </div>
+            <div class="mb-4">
+            <label class="block text-white text-sm font-bold mb-2">
+              Your message
+              <textarea class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" name="message"></textarea>
+            </label>
+            </div>
+            <!-- your other form fields go here -->
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send</button>
+             <p class="text-center mt-5 text-sm">I will reply your mail as soon as possible</p>
+            </form>
+          </div>
+          <p style="color: rgb(166 166 166);" class="mt-6 italic text-sm">IF you dont want to fill form direct<a class="hover:text-[#FA5252] ml-1 mr-1 italic duration-300 transition text-green-500"
+              href="mailto:shekharpareek30@gmail.com">email</a>me</p>
+              <div class="mt-3 flex items-center justify-start">
+                <div
+                  class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white cursor-pointer mx-2 text-[20px] text-white">
+                  <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <div
+                  class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white cursor-pointer mx-2 text-[20px] text-white">
+                  <a href="https://github.com/ShekharPareek"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <div
+                  class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white  cursor-pointer mx-2 text-[20px] text-white">
+                  <a href="https://codepen.io/shekharpareek-the-bold"><i class="fa-brands fa-codepen"></i></a>
+                </div>
+                <div
+                  class="bg-[#1D1D1D] w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] hover:text-white  cursor-pointer mx-2 text-[20px] text-white">
+                  <a href="mailto:shekharpareek30@gmail.com"><i class="fa-brands fa-google"></i></a>
+                </div>
+              </div>
+              <p  style="color: rgb(166 166 166);"  class="mt-4 italic text-[12px]">Please feel free to reach out to me. I assure you that you will not be disappointed. Alternatively, we can grab a coffee together<a class="hover:text-[#FA5252] ml-1 mr-1 italic duration-300 transition text-green-500"
+                href="tel:9694193457">&#9742;&#65039;</a></p>
+          <div style="color: rgb(166 166 166);" class=" bg-[#1b1b1b]  h-7 pt-2 pb-2 rounded-lg mt-5 text-center text-[10px]">
+            This portfolio is created from scratch using👉🏼 <a class="pt-1" target="_blank"
+              href="https://tailwindcss.com/">Tailwind<img class="w-4 inline" src="../asset/tailwind-css.svg"
+                alt="tailwind-css">CSS</a>
+          </div>
+        </div>
+        </div>
+      </div>
+    
+  </div>
+  </div>
+</body>
+
+</html>
