@@ -13,6 +13,12 @@ $(document).ready(function(){
       $(".tab_content").fadeOut(0);     
       $("[data-tab="+target+"]").fadeIn(); 
     });
+
+    window.onbeforeunload = () => {
+      for(const form of document.getElementsByTagName('form')) {
+        form.reset();
+      }
+    }
     });
 
 
