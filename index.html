@@ -21,12 +21,101 @@
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./global.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
+<style>
+  html{
+    scroll-behavior: smooth;
+  }
+  .animation_container {
+    overflow: hidden;
+    width: 100%;
+    height: 80px;
+    padding: 20px 10px 20px 10px;
+  }
+  .tab_content {
+    display: none;
+  }
+
+  .animation_container .animation-inner div {
+    padding: 4px 12px;
+    height: auto;
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .web-dev {
+    margin-top: 52px;
+  }
+
+  .animation_container div:first-child {
+    animation: textAnimation 8s infinite;
+  }
+
+  @keyframes textAnimation {
+    0% {
+      margin-top: 0;
+    }
+
+    10% {
+      margin-top: -80px
+    }
+
+    20% {
+      margin-top: -80px;
+    }
+
+    30% {
+      margin-top: -179.84px;
+    }
+
+    40% {
+      margin-top: -179.84px;
+    }
+
+    60% {
+      margin-top: -179.84px;
+    }
+
+    70% {
+      margin-top: -80px;
+    }
+
+    80% {
+      margin-top: -80px;
+    }
+
+    80% {
+      margin-top: -80px;
+    }
+
+    90% {
+      margin-top: 0;
+    }
+
+    100% {
+      margin-top: 0;
+    }
+
+  }
+
+  .position-fixed{
+    position: sticky;
+    top:144px;
+  }
+
+  
+  .active_item{
+    background-image: linear-gradient(to right, #FA5252, #DD2476);
+  }
+</style>
+
 <body style="font-family:Poppins,sans-serif;" class="m-0 p-0 h-full box-border">
-  <div  class="section bg-[url(../asset/bgtwo.jpg)]  w-full h-full box-border relative bg-no-repeat bg-fixed bg-cover">
+  <div style="background-color: #4158D0;
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  "
+    class="section bg-gradient-to-right from-[#FA5252] to-[#DD2476] w-full h-full box-border relative bg-no-repeat bg-fixed bg-cover">
      <div class="text-4xl  w-full Typo-text
      rounded-lg animation_container text-white  text-center flex justify-center items-center gap-3"><span>I am a</span></div>
       <div style="font-weight: 700;  font-family:Roboto Slab, serif;
@@ -76,7 +165,7 @@
           </div>
           <div class="bg-[#1d1d1d] p-5 w-full rounded-xl mt-3">
             <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
-                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-[#66FF00]  cursor-pointer mx-2 text-[20px]"><svg
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
                   stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em"
                   width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -90,7 +179,7 @@
               </div>
             </div>
             <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
-                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] cursor-pointer mx-2 text-[20px] text-[#32e8fb]"><svg
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
                   stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 384 512" height="1em"
                   width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -105,7 +194,7 @@
               </div>
             </div>
             <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
-                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-[#E32636]  cursor-pointer mx-2 text-[20px]"><svg
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
                   stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em"
                   width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -119,7 +208,7 @@
               </div>
             </div>
             <div class="flex py-2.5 border-b border-[#E3E3E3] dark:border-[#3D3A3A]"><span
-                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-[#662d91]  cursor-pointer mx-2 text-[20px]"><svg
+                class="flex-shrink-0 socialbtn  bg-black w-14 px-4 py-2 rounded-lg hover:bg-gradient-to-r from-[#FA5252] to-[#DD2476] text-white  cursor-pointer mx-2 text-[20px]"><svg
                   stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em"
                   width="1em" xmlns="http://www.w3.org/2000/svg">
                   <path
@@ -133,15 +222,15 @@
               </div>
             </div>
           </div>
-          <div class="p-4 bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-full mt-5 w-fit text-center text-white"><i class="fa-solid fa-download"></i>
-            <a href="../asset/Shekhar Pareek -FrontendDeveloper-1.8Year.docx.pdf">Download Resume</a>
+          <div class="p-4 bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-full mt-5 w-fit text-center text-white">
+            <a href="../asset/Shekhar Pareek -FrontendEngineer-1.8Year.pdf">Download Resume</a>
           </div>
         </div>
       </div>
       </div>
       <!-- Column-2 with nav -->
-      <div  style="box-shadow: inset -9rem 0 4rem -13rem #000;" class="col-2 container sm:mt-16 sm:h-fit sm:basis-[50%]">
-        <nav class="block p-5 bg-[#111111] rounded-xl text-[#a6a6a6] sm:p-5 sm:text-lg  lg:mr-0 text-sm w-[95%] sm:w-[45%]  mx-auto md:mr-0">
+      <div style="box-shadow: inset -9rem 0 4rem -13rem #000;" class="col-2 container sm:mt-16 sm:h-fit sm:basis-[50%]">
+        <nav class="block p-5 bg-[#111111] rounded-xl text-white sm:p-5 sm:text-lg  sm:ml-auto text-sm w-[95%] m-auto sm:w-[45%]">
           <ul class="flex items-center justify-evenly w-full text-center item nav-item gap-3">
             <li id="home"
               class="transition-colors rounded-lg bg-[#212425] text-center w-full max-md:p-4:"><a
@@ -164,7 +253,7 @@
             </li>
           </ul>
         </nav>
-        <div class="content_container w-full md:w-[800px] md:max-w-5xl sm:p-0 p-2">
+        <div class="content_container p-2 w-full md:w-[800px] md:max-w-5xl">
         <div  data-tab="home" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
           <div class="flex items-center gap-4  sm:gap-12">
             <h2 style="font-family:Roboto Slab, serif"  class="text-white sm:text-[32px] text-2xl">About Me</h2>
@@ -249,7 +338,7 @@
           </div>
           <div  class="flex gap-7 w-full ">
             <div class="pt-4">
-              <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex flex-col items-start gap-5 md:flex-row">
+              <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex flex-col items-start gap-5 md:flex-row md:items-center">
                   <span class="w-24 md:w-auto h-auto"><img class="w-full" src="../asset/sunarc.png" alt=""></span>
                   <div class="flex flex-col">
                       <h5 class="text-lg md:text-xl pb-2 flex justify-between"><span>SunArc Technologies</span><span>May 2022</span></h5>
@@ -277,7 +366,7 @@
             <div class="pt-4 md:w-1/2">
                 <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
                     <div class="block">
-                        <p class="text-lg pb-2 shadow-md w-fit">AmarChitra Khata</p>
+                        <p class="text-lg pb-2">AmarChitra Khata</p>
                         <p style="color: rgb(166 166 166);" class="text-sm">Amar Chitra Katha is an Indian comic book publisher, based in Mumbai, India. The company was founded in 1967 by Anant Pai and is headquartered in Mumbai, India.</p>
                     </div>
                 </div>
@@ -294,11 +383,10 @@
             </div>
             <div class="pt-4 md:w-1/2">
               <div style="border:0.20px solid #3d3a3a" class="rounded-lg p-4 text-white flex items-start gap-5">
-                <div class="block">
-                  <p class="text-lg pb-2"><img class="w-1/4 bg-white" src="https://orbasics.com/cdn/shop/files/Clear_background_2x_a205ae58-529c-49a6-ba50-f78d03655756_190x.png?v=1630531336" alt=""></p>
-                  <p style="color: rgb(166 166 166);" class="text-sm">Orbasics is an family-run manufacturing company from Porto, Portugal, who shares our deep commitment to sustainability and transparency in fashion production.
-</p>
-              </div>
+                  <div class="block">
+                      <p class="text-lg pb-2"><img class="w-1/4" src="../asset/twelvesixtynine-beige-logo_135x.png" alt=""></p>
+                      <p style="color: rgb(166 166 166);" class="text-sm">Johann Wolff [JW] is a Miami-based eyewear producer with a deep German heritage, focusing on classic silhouettes that push the boundaries of everyday spectacles one design at a time. Each frame is handcrafted, utilizing premium cellulose acetate in Hong Kong. As a result, JW provides the best everyday frames that you won’t think twice about wearing</p>
+                  </div>
               </div>
           </div>
         </div>
@@ -332,7 +420,7 @@
         <div data-tab="works" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
           <div class="flex items-center sm:items-center gap-4 sm:gap-12">
             <h2 style="font-family:Roboto Slab, serif" class="text-white sm:text-[32px] text-2xl w-full">Why Choose Me?</h2>
-            <div class="w-full h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:h-[1px]"></div>
+            <div class="w-full h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:w-1/2 sm:h-[1px]"></div>
           </div>
           <div class="About-desciption  pt-3 text-white">
             <ul style="list-style:disc; padding:10px 20px;color: rgb(166 166 166); "class="items-list list-disc pl-3 text-[14px] sm:text-[16px]">
@@ -411,7 +499,7 @@
       </div>
     
       <div  class="w-full mt-3 sm:p-4">
-        <div  class="sm:text-sm flex justify-around items-center sm:gap-2 gap-[2px] flex-wrap md:flex-nowrap">
+        <div  class="sm:text-sm flex justify-around items-center sm:gap-2 flex-wrap gap-[2px]">
           <h5 class=" sm:w-28 w-24 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold mb-1">JQUERY</h5>
           <h5 class=" sm:w-28 w-24 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold mb-1">SCSS</h5>
           <h5 class=" sm:w-28 w-24 text-center rounded-lg p-1 bg-orange-400 text-black  font-semibold mb-1">GSAP</h5>
@@ -430,7 +518,7 @@
         <div data-tab="contacts" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
           <div class="flex items-center gap-4 sm:gap-12">
             <h2 style="font-family:Roboto Slab, serif" class="text-white sm:text-[29px] text-2xl w-full">Let's Work Together!</h2>
-            <div class="w-full h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:h-[1px]"></div>
+            <div class="w-full h-[2px] bg-gradient-to-r from-[#FA5252] to-[#DD2476] rounded-lg sm:w-1/2 sm:h-[1px]"></div>
           </div>
           <div style="color: rgb(166 166 166);" class="About-desciption  pt-3 text-white text-sm sm:text-[16px]">If you're ready to take your web presence to the next level, I'm here to help. Contact me today to discuss your project requirements and see how I can bring your vision to life. Let's create something extraordinary together!</div>
           <div class="flex gap-7 w-full mt-7 mb-5">
@@ -456,7 +544,7 @@
             </label>
             </div>
             <!-- your other form fields go here -->
-            <button id="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send</button>
+            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">Send</button>
              <p class="text-center mt-5 text-sm">I will reply your mail as soon as possible</p>
             </form>
           </div>
