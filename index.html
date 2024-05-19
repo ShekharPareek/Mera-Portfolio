@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="./style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src="https://cdn.tailwindcss.com"></script>
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
   <link
@@ -21,7 +23,6 @@
     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="./global.js"></script>
-
 </head>
 <body style="font-family:Poppins,sans-serif;" class="m-0 p-0 h-full box-border">
   <div style="background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);"  class="section bg-[url(../asset/bgtwo.jpg)] bg-gradient-to-r from-fuchsia-500 to-cyan-500  w-full h-full box-border relative bg-no-repeat bg-fixed bg-cover lg:bg-fixed">
@@ -39,7 +40,7 @@
       </div>
     <div  class="bg-slack-600 container sm:flex sm:justify-center sm:gap-5 sm:pb-40 flex-wrap m-auto">
       <!-- Column-1 -->
-      <div style="box-shadow: inset -9rem 0 4rem -13rem #000 ; padding-top: 0;" id="column-1" class="col-1 p-6  lg:h-screen lg:sticky top-[149px] sm:static sm:mt-32 mt-[142px]">
+      <div data-aos="fade-right" style="box-shadow: inset -9rem 0 4rem -13rem #000 ; padding-top: 0;" id="column-1" class="col-1 p-6  lg:h-screen lg:sticky top-[149px] sm:static sm:mt-32 mt-[142px]">
       <div class="relative">
         <div style="background-color:#0e4379; padding:7px 0 0 0;box-shadow: #254bdd 0px 2px 7px 0px;"
           class="profile rounded-xl p-1 w-[264px] h-[260px] mx-auto mb-16 translate-y-1/2 overflow-hidden absolute left-0 right-0 bottom-[90%]">
@@ -139,7 +140,7 @@
       </div>
       <!-- Column-2 with nav -->
       <div  style="box-shadow: inset -9rem 0 4rem -13rem #000;" class="col-2 container sm:mt-16 sm:h-fit sm:basis-[50%]">
-        <nav class="block p-5 bg-[#111111] rounded-xl text-[#a6a6a6] sm:p-5 sm:text-lg  lg:mr-0 text-sm w-[95%] sm:w-[45%]  mx-auto md:mr-0">
+        <nav data-aos="flip-up" class="block p-5 bg-[#111111] rounded-xl text-[#a6a6a6] sm:p-5 sm:text-lg  lg:mr-0 text-sm w-[95%] sm:w-[45%]  mx-auto md:mr-0">
           <ul class="flex items-center justify-evenly w-full text-center item nav-item gap-3">
             <li id="home"
               class="transition-colors rounded-lg bg-[#212425] text-center w-full max-md:p-4:"><a
@@ -162,7 +163,7 @@
             </li>
           </ul>
         </nav>
-        <div class="content_container w-full md:w-[800px] md:max-w-5xl sm:p-0 p-2">
+        <div data-aos="fade-left" class="content_container w-full md:w-[800px] md:max-w-5xl sm:p-0 p-2">
         <div  data-tab="home" class="bg-[#111111] sm:p-14 p-9  rounded-lg mt-7  tab_content ">
           <div class="flex items-center gap-4  sm:gap-12">
             <h2 style="font-family:Roboto Slab, serif"  class="text-white sm:text-[32px] text-2xl">About Me</h2>
@@ -491,6 +492,10 @@
     
   </div>
   </div>
+  <script>
+    // The AOS library for scroll animations
+    AOS.init();
+  </script>
 </body>
 
 </html>
