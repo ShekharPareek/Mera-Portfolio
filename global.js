@@ -12,6 +12,7 @@ $(document).ready(function(){
       $(this).addClass('active_item');
       $(".tab_content").fadeOut(0);     
       $("[data-tab="+target+"]").fadeIn(); 
+      $("[data-view="+target+"]").fadeIn(); 
     });
 
     window.onbeforeunload = () => {
