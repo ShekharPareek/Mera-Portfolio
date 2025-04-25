@@ -357,79 +357,38 @@
             
           </div>
           <div  style="border:0.20px solid #3d3a3a" class="flex gap-7 w-full rounded-lg mt-4 mb-3">
-            <style>
-              .flip-card {
-                perspective: 1000px;
-              }
-              .flip-card-inner {
-                transition: transform 0.6s;
-                transform-style: preserve-3d;
-              }
-              .flip-card:hover .flip-card-inner {
-                transform: rotateY(180deg);
-              }
-              .flip-card-front, .flip-card-back {
-                backface-visibility: hidden;
-              }
-              .flip-card-back {
-                transform: rotateY(180deg);
-              }
-            </style>
-            
-            <div class="flex flex-wrap md:flex-nowrap gap-8 w-full p-4 bg-[#121212]">
-            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full p-4">
               <!-- UNIQSO Card -->
-              <div class="flip-card w-full md:w-1/2">
-                <div class="flip-card-inner relative border border-[#3d3a3a] rounded-xl h-full">
-                  <!-- Front -->
-                  <div class="flip-card-front absolute inset-0 bg-[#1a1a1a] rounded-xl p-5 flex flex-col gap-3">
-                    <div>
-                      <h3 class="text-xl font-semibold bg-gradient-to-r from-[#dd2476] to-[#330867] text-transparent bg-clip-text">UNIQSO</h3>
-                      <span class="text-xs text-gray-400">Countries for UK, CA, EU, MY</span>
-                    </div>
-                    <ul class="list-disc list-inside pl-2 text-sm text-gray-400 space-y-1 mt-2">
-                      <li>Shopify Templating language changes and theme maintenance.</li>
-                      <li>Shopify app integration.</li>
-                      <li>Customizable content sections in Shopify themes.</li>
-                      <li>Product creation, page building, and order/shipping support.</li>
-                      <li>Custom JavaScript features for interactivity.</li>
-                      <li>Website design/functionality updates.</li>
-                      <li>Theme customization via Shopify CLI.</li>
-                    </ul>
-                  </div>
-            
-                  <!-- Back -->
-                  <div class="flip-card-back absolute inset-0 bg-[#1a1a1a] rounded-xl flex items-center justify-center">
-                    <img src="path-to-uniqso-logo.png" alt="UNIQSO Logo" class="w-32 h-32 object-contain">
-                  </div>
-                </div>
+              <div class="bg-[#1c1c1e] rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+                <h2 class="text-xl font-semibold bg-gradient-to-r from-pink-500 to-indigo-900 bg-clip-text text-transparent">
+                  UNIQSO
+                </h2>
+                <span class="text-xs text-white/60">Countries for UK, CA, EU, MY</span>
+                <ul class="list-disc list-inside text-sm text-gray-400 space-y-2 mt-2">
+                  <li>Shopify templating language changes and theme maintenance work.</li>
+                  <li>Shopify app integration.</li>
+                  <li>Customizable Shopify theme sections for dynamic content placement.</li>
+                  <li>Product creation, page building, navigation setup, and shipping/order management.</li>
+                  <li>Custom JavaScript for dynamic product displays and user interaction enhancements.</li>
+                  <li>Web page maintenance work related to design and functionality.</li>
+                  <li>Customizing themes using Shopify CLI.</li>
+                </ul>
               </div>
             
               <!-- Jeebly Card -->
-              <div class="flip-card w-full md:w-1/2">
-                <div class="flip-card-inner relative border border-[#3d3a3a] rounded-xl h-full">
-                  <!-- Front -->
-                  <div class="flip-card-front absolute inset-0 bg-[#1a1a1a] rounded-xl p-5 flex flex-col gap-3">
-                    <div>
-                      <h3 class="text-xl font-semibold bg-gradient-to-r from-[#dd2476] to-[#330867] text-transparent bg-clip-text">Jeebly</h3>
-                      <span class="text-xs text-gray-400">Shopify Custom App</span>
-                    </div>
-                    <ul class="list-disc list-inside pl-2 text-sm text-gray-400 space-y-1 mt-2">
-                      <li>React + Node-based custom Shopify app.</li>
-                      <li>Auto-sync with Shopify orders for shipping.</li>
-                      <li>API integration for real-time data fetch.</li>
-                      <li>Shipping within Shopify — no external site needed.</li>
-                      <li>Order sync and automatic shipment booking.</li>
-                    </ul>
-                  </div>
-            
-                  <!-- Back -->
-                  <div class="flip-card-back absolute inset-0 bg-[#1a1a1a] rounded-xl flex items-center justify-center">
-                    <img src="path-to-jeebly-logo.png" alt="Jeebly Logo" class="w-32 h-32 object-contain bg-white p-2 rounded">
-                  </div>
-                </div>
+              <div class="bg-[#1c1c1e] rounded-2xl shadow-lg p-6 flex flex-col gap-4">
+                <h2 class="text-xl font-semibold bg-gradient-to-r from-pink-500 to-indigo-900 bg-clip-text text-transparent">
+                  Jeebly
+                </h2>
+                <span class="text-xs text-white/60">Shopify Custom App</span>
+                <ul class="list-disc list-inside text-sm text-gray-400 space-y-2 mt-2">
+                  <li>Custom app built using React and Node.</li>
+                  <li>Third-party app for auto-syncing Shopify orders for shipping.</li>
+                  <li>Real-time API integration for seamless navigation and data fetching.</li>
+                  <li>Enables shipping without visiting the Jeebly website.</li>
+                  <li>Automatically syncs Shopify orders to the app for instant booking.</li>
+                </ul>
               </div>
-            
             </div>
             
            
