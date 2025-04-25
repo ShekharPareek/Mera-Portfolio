@@ -357,44 +357,79 @@
             
           </div>
           <div  style="border:0.20px solid #3d3a3a" class="flex gap-7 w-full rounded-lg mt-4 mb-3">
-            <div class="rounded-lg p-4 w-full flex flex-wrap md:flex-nowrap gap-8 bg-[#121212]">
-              <!-- UNIQSO -->
-              <div class="flex flex-col w-full md:w-1/2 gap-3 border border-[#3d3a3a] rounded-xl p-5 bg-[#1a1a1a]">
-                <div class="flex items-center gap-3">
-                  <img src="path-to-uniqso-logo.png" alt="UNIQSO Logo" class="w-12 h-12 object-contain">
-                  <div>
-                    <h3 class="text-xl font-semibold bg-gradient-to-r from-[#dd2476] to-[#330867] text-transparent bg-clip-text">UNIQSO</h3>
-                    <span class="text-xs text-gray-400">Countries for UK, CA, EU, MY</span>
+            <style>
+              .flip-card {
+                perspective: 1000px;
+              }
+              .flip-card-inner {
+                transition: transform 0.6s;
+                transform-style: preserve-3d;
+              }
+              .flip-card:hover .flip-card-inner {
+                transform: rotateY(180deg);
+              }
+              .flip-card-front, .flip-card-back {
+                backface-visibility: hidden;
+              }
+              .flip-card-back {
+                transform: rotateY(180deg);
+              }
+            </style>
+            
+            <div class="flex flex-wrap md:flex-nowrap gap-8 w-full p-4 bg-[#121212]">
+            
+              <!-- UNIQSO Card -->
+              <div class="flip-card w-full md:w-1/2">
+                <div class="flip-card-inner relative border border-[#3d3a3a] rounded-xl h-full">
+                  <!-- Front -->
+                  <div class="flip-card-front absolute inset-0 bg-[#1a1a1a] rounded-xl p-5 flex flex-col gap-3">
+                    <div>
+                      <h3 class="text-xl font-semibold bg-gradient-to-r from-[#dd2476] to-[#330867] text-transparent bg-clip-text">UNIQSO</h3>
+                      <span class="text-xs text-gray-400">Countries for UK, CA, EU, MY</span>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 text-sm text-gray-400 space-y-1 mt-2">
+                      <li>Shopify Templating language changes and theme maintenance.</li>
+                      <li>Shopify app integration.</li>
+                      <li>Customizable content sections in Shopify themes.</li>
+                      <li>Product creation, page building, and order/shipping support.</li>
+                      <li>Custom JavaScript features for interactivity.</li>
+                      <li>Website design/functionality updates.</li>
+                      <li>Theme customization via Shopify CLI.</li>
+                    </ul>
+                  </div>
+            
+                  <!-- Back -->
+                  <div class="flip-card-back absolute inset-0 bg-[#1a1a1a] rounded-xl flex items-center justify-center">
+                    <img src="path-to-uniqso-logo.png" alt="UNIQSO Logo" class="w-32 h-32 object-contain">
                   </div>
                 </div>
-                <ul class="list-disc list-inside pl-2 text-sm text-gray-400 space-y-1">
-                  <li>Shopify Templating language changes and theme maintenance.</li>
-                  <li>Shopify app integration.</li>
-                  <li>Create customizable sections for dynamic content placement.</li>
-                  <li>Product creation, page building, navigation, and shipping/order maintenance.</li>
-                  <li>Develop custom JavaScript features for dynamic user interactions.</li>
-                  <li>Design and functionality-based web page maintenance.</li>
-                  <li>Theme customization using Shopify CLI.</li>
-                </ul>
               </div>
             
-              <!-- Jeebly -->
-              <div class="flex flex-col w-full md:w-1/2 gap-3 border border-[#3d3a3a] rounded-xl p-5 bg-[#1a1a1a]">
-                <div class="flex items-center gap-3">
-                  <img src="path-to-jeebly-logo.png" alt="Jeebly Logo" class="w-12 h-12 object-contain bg-white p-1 rounded">
-                  <div>
-                    <h3 class="text-xl font-semibold bg-gradient-to-r from-[#dd2476] to-[#330867] text-transparent bg-clip-text">Jeebly</h3>
-                    <span class="text-xs text-gray-400">Shopify Custom App</span>
+              <!-- Jeebly Card -->
+              <div class="flip-card w-full md:w-1/2">
+                <div class="flip-card-inner relative border border-[#3d3a3a] rounded-xl h-full">
+                  <!-- Front -->
+                  <div class="flip-card-front absolute inset-0 bg-[#1a1a1a] rounded-xl p-5 flex flex-col gap-3">
+                    <div>
+                      <h3 class="text-xl font-semibold bg-gradient-to-r from-[#dd2476] to-[#330867] text-transparent bg-clip-text">Jeebly</h3>
+                      <span class="text-xs text-gray-400">Shopify Custom App</span>
+                    </div>
+                    <ul class="list-disc list-inside pl-2 text-sm text-gray-400 space-y-1 mt-2">
+                      <li>React + Node-based custom Shopify app.</li>
+                      <li>Auto-sync with Shopify orders for shipping.</li>
+                      <li>API integration for real-time data fetch.</li>
+                      <li>Shipping within Shopify — no external site needed.</li>
+                      <li>Order sync and automatic shipment booking.</li>
+                    </ul>
+                  </div>
+            
+                  <!-- Back -->
+                  <div class="flip-card-back absolute inset-0 bg-[#1a1a1a] rounded-xl flex items-center justify-center">
+                    <img src="path-to-jeebly-logo.png" alt="Jeebly Logo" class="w-32 h-32 object-contain bg-white p-2 rounded">
                   </div>
                 </div>
-                <ul class="list-disc list-inside pl-2 text-sm text-gray-400 space-y-1">
-                  <li>Custom Shopify app built using React and Node.js.</li>
-                  <li>Auto-sync with Shopify orders for seamless shipping.</li>
-                  <li>Real-time API integration for dynamic data.</li>
-                  <li>Shipping features accessible directly inside Shopify.</li>
-                  <li>Automatic order sync and booking in the Jeebly app.</li>
-                </ul>
               </div>
+            
             </div>
             
            
